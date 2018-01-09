@@ -1,10 +1,5 @@
 package sorting.problems;
-/**
- * @author KJS1124
- * Time Complexity O(nLogn)
- * Auxiliary Space: O(n)
- * Problem link http://www.spoj.com/problems/INVCNT/
- */
+
 public class Inversions {
 
 	public int mergeSort(int arr[], int start, int end) {
@@ -38,7 +33,7 @@ public class Inversions {
 				arr[k] = left[i++];
 			} else {
 				if (left[i] != Integer.MAX_VALUE) {
-					count_inversions+= left.length-1-i;
+					count_inversions += left.length - 1 - i;
 				}
 				arr[k] = right[j++];
 			}
@@ -46,10 +41,10 @@ public class Inversions {
 		return count_inversions;
 
 	}
-	
+
 	public static void main(String agrs[]) {
-		int arr[] = {1, 20, 6, 4, 5};
+		int arr[] = { 1, 20, 6, 4, 5 };
 		Inversions inversions = new Inversions();
-		System.out.println(inversions.mergeSort(arr,0, arr.length-1));
+		System.out.println(inversions.mergeSort(arr, 0, arr.length - 1));
 	}
 }
