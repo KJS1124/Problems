@@ -1,5 +1,10 @@
 package sorting.problems;
-
+/**
+ * @author KJS1124
+ * Time Complexity O(nLogn)
+ * Auxiliary Space: O(n)
+ * Problem link http://www.spoj.com/problems/INVCNT/
+ */
 public class Inversions {
 
 	public int mergeSort(int arr[], int start, int end) {
