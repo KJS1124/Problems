@@ -5,6 +5,7 @@ package leetcode;
  * User:karanjotsingh
  * Date:2024-01-10
  * Time:20:14
+ * Problem link: https://leetcode.com/problems/merge-two-sorted-lists/
  */
 public class MergeSortedLinkedList {
     public static void main(String args[]) {
